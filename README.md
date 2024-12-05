@@ -54,8 +54,8 @@ The goal of this project is to evaluate proficiency in React, Redux, JavaScript,
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
-    cd YOUR_REPOSITORY_NAME
+    git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/G-Anubhav/OrganizeOps.git)
+    cd OrganizeOps
     ```
 
 2. **Install dependencies:**
