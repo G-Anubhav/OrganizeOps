@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+The goal of this project is to evaluate proficiency in React, Redux, JavaScript, and UI/UX design principles. This task management dashboard allows users to manage tasks (add, edit, delete, and mark as completed) and filter tasks based on their status.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [Routes](#routes)
+- [State Management](#state-management)
+- [Additional Features](#additional-features)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Task Functionality
+- **Add Task:** Users can add tasks with a title, description, and due date.
+- **Edit Task:** Users can edit task details.
+- **Delete Task:** Users can delete a task.
+- **Mark as Completed:** Users can mark tasks as completed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Task Filters
+- Show tasks by:
+  - All Tasks
+  - Completed Tasks
+  - Pending Tasks
+  - Overdue Tasks (tasks with a due date before the current date).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Redux Integration
+- Use Redux for state management.
+- Store the list of tasks in the Redux store.
+- Create actions and reducers to handle task CRUD operations and filtering.
 
-### `npm test`
+### UI/UX Design
+- Use a modern UI library (like Material-UI, Ant Design, or styled-components) or a custom UI design.
+- Create a responsive design that works well on desktop and mobile screens.
+- Maintain a clean and user-friendly layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Additional Features (Optional)
+- **Search Functionality:** Find tasks by title.
+- **Drag-and-Drop:** Reorder tasks.
+- **Confirmation Modal:** Confirm before deleting a task.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js installed on your machine
+- npm or yarn package manager
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instructions
 
-### `npm run eject`
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
+    cd YOUR_REPOSITORY_NAME
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server:**
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Open your browser and go to `http://localhost:3000`.
+2. Use the dashboard to add, edit, delete, and manage tasks.
+3. Use the filters to view tasks by their status.
+4. Optionally, use the search bar to find tasks by title, drag-and-drop tasks to reorder them, and confirm before deleting a task.
 
-## Learn More
+## Tech Stack
+- **React**
+- **Redux** (with @reduxjs/toolkit preferred)
+- **JavaScript** (ES6+ features)
+- **CSS or SCSS** (optional: CSS-in-JS libraries like styled-components)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Routes
+- `/tasks` - Task Dashboard
+- `/tasks/:id` - Task Details Page (optional)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## State Management
+- **Redux Toolkit:** Handle state and actions.
+- **Middleware:** Use Redux Thunk for asynchronous operations, if needed.
 
-### Code Splitting
+## Additional Features (Optional)
+- Add search functionality to find tasks by title.
+- Implement drag-and-drop to reorder tasks.
+- Add a confirmation modal before deleting a task.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
